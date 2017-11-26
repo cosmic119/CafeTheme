@@ -1,9 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.hyeongyu.caferecommend.ThemeSelectActivity">
+    android:background="#eeeeee"
+    android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/imgBtn01"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="170dp"
+        android:layout_height="115dp"
+        android:background="@drawable/study"/>
+
+
+    <Button
+        android:id="@+id/imgBtn02"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="170dp"
+        android:layout_height="115dp"
+        android:layout_toRightOf="@id/imgBtn01"
+        android:background="@drawable/rooftop"/>
+
+
+    <Button
+        android:id="@+id/imgBtn03"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/imgBtn01"
+        android:layout_width="170dp"
+        android:layout_height="115dp"
+        android:background="@drawable/cake" />
+
+
+    <Button
+        android:id="@+id/imgBtn04"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/imgBtn03"
+        android:layout_below="@id/imgBtn02"
+        android:layout_width="170dp"
+        android:layout_height="115dp"
+        android:background="@drawable/talk"/>
+
+
+    <Button
+        android:id="@+id/imgBtn05"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/imgBtn03"
+        android:layout_width="170dp"
+        android:layout_height="115dp"
+        android:background="@drawable/brunch"/>
+
+
+    <Button
+        android:id="@+id/imgBtn06"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/imgBtn05"
+        android:layout_below="@id/imgBtn04"
+        android:layout_width="170dp"
+        android:layout_height="115dp"
+        android:background="@drawable/pet"/>
+
+
+    <Button
+        android:id="@+id/imgBtn07"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/imgBtn05"
+        android:layout_width="170dp"
+        android:layout_height="115dp"
+        android:background="@drawable/comics"/>
+
+
+    <Button
+        android:id="@+id/imgBtn08"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/imgBtn07"
+        android:layout_below="@id/imgBtn06"
+        android:layout_width="170dp"
+        android:layout_height="115dp"
+        android:background="@drawable/date"/>
+
+
+</RelativeLayout>
