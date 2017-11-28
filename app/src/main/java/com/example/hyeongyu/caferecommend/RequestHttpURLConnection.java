@@ -1,4 +1,4 @@
-package com.example.eunjeong.d_cafe;
+package com.example.hyeongyu.caferecommend;
 
 /**
  * Created by eunjeong on 2017-11-17.

@@ -1,4 +1,4 @@
-package com.example.eunjeong.d_cafe;
+package com.example.hyeongyu.caferecommend;
 
 import android.content.ContentValues;
 import android.os.AsyncTask;
@@ -19,7 +19,7 @@ public class SearchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
-        textView = (TextView) findViewById(R.id.textView);
+//        textView = (TextView) findViewById(R.id.textView);
         button = (Button) findViewById(R.id.button2);
 
         url = "https://openapi.naver.com/v1/search/blog?query=";
