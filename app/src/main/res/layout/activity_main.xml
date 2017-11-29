@@ -21,7 +21,6 @@ tools:context="com.example.hyeongyu.caferecommend.MainActivity">
 <LinearLayout
     android:id="@+id/linearLayout"
     android:layout_width="250dp"
-
     android:layout_height="195dp"
     android:layout_marginBottom="8dp"
     android:layout_marginLeft="8dp"
@@ -56,7 +55,7 @@ tools:context="com.example.hyeongyu.caferecommend.MainActivity">
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:textColor="#ffffff"
         android:layout_weight="1"
         android:background="#ffa7bc"
         android:text="Log in" />
