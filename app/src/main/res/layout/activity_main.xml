@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--<LinearLayout android:layout_height="match_parent"-->
+    <!--android:layout_width="match_parent"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+    <!--<com.facebook.login.widget.LoginButton-->
+        <!--android:id="@+id/login_button"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginBottom="30dp"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:layout_weight="5.17"-->
+        <!--android:text="페이스북으로 로그인" />-->
+
+
+
+<!--</LinearLayout>-->
+
+
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
@@ -6,17 +26,20 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context="com.example.hyeongyu.caferecommend.MainActivity">
 
-    <ImageView
+<ImageView
     android:id="@+id/imageView"
-    android:layout_width="519dp"
-    android:layout_height="100dp"
+    android:layout_width="376dp"
+    android:layout_height="101dp"
     app:srcCompat="@drawable/app_logo"
-    tools:layout_editor_absoluteX="-67dp"
     android:layout_marginBottom="8dp"
     app:layout_constraintBottom_toTopOf="@+id/linearLayout"
     app:layout_constraintTop_toTopOf="parent"
     android:layout_marginTop="25dp"
-    app:layout_constraintVertical_bias="0.087" />
+    app:layout_constraintVertical_bias="0.377"
+    android:layout_marginRight="8dp"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginLeft="8dp"
+    app:layout_constraintLeft_toLeftOf="parent" />
 
 <LinearLayout
     android:id="@+id/linearLayout"
@@ -55,20 +78,20 @@ tools:context="com.example.hyeongyu.caferecommend.MainActivity">
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#ffffff"
         android:layout_weight="1"
         android:background="#ffa7bc"
-        android:text="Log in" />
+        android:text="Log in"
+        android:textColor="#ffffff" />
 
     <com.facebook.login.widget.LoginButton
         android:id="@+id/login_button"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
-        android:text="페이스북으로 로그인"
         android:layout_marginBottom="30dp"
         android:layout_marginTop="30dp"
-        android:layout_weight="5.17" />
+        android:layout_weight="5.17"
+        android:text="페이스북으로 로그인" />
 
 </LinearLayout>
 
