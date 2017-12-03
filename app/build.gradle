@@ -27,6 +27,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.facebook.android:facebook-android-sdk:4.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.naver.maps.open:naver-map-api:2.1.2@aar'
     testCompile 'junit:junit:4.12'
 }
 

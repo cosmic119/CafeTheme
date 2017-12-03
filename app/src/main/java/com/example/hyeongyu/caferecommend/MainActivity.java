@@ -47,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
                 parameters.putString("fields", "id,name,email,gender,birthday");
                 graphRequest.setParameters(parameters);
                 graphRequest.executeAsync();
+
+                Intent  intent = new Intent(MainActivity.this, CafeDescriptionActivity.class);
+                startActivity(intent);
+
             }
 
             @Override
