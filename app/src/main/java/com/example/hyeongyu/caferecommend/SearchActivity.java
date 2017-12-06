@@ -1,6 +1,6 @@
 package com.example.hyeongyu.caferecommend;
-
 import android.content.ContentValues;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,16 +14,17 @@ public class SearchActivity extends AppCompatActivity {
     TextView textView;
     Button button;
     String url;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
-//        textView = (TextView) findViewById(R.id.textView);
-        button = (Button) findViewById(R.id.button2);
+        //textView = (TextView) findViewById(R.id.textView);
+        button = (Button) findViewById(R.id.reviewButton);
 
         url = "https://openapi.naver.com/v1/search/blog?query=";
-
+        intent = new Intent(SearchActivity.this, ReviewActivity.class);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,10 +71,16 @@ public class SearchActivity extends AppCompatActivity {
             for(int i=0; i<splitArray.length; i++){
                 //temp = splitArray[i].split(",");
                 dataArray[i] = splitArray[i].split(",");
+                if(i>=2){
+                    intent.putExtra("title"+i, dataArray[i][0]);
+                    intent.putExtra("link"+i, dataArray[i][1]);
+                    intent.putExtra("description"+i, dataArray[i][2]);
+
+                }
             }
 
 
-            for(int i=0; i<7; i++){
+            for(int i=0; i<5; i++){
                 app += dataArray[2][i]+"\n";
             }
 
@@ -83,7 +90,10 @@ public class SearchActivity extends AppCompatActivity {
 //
 //            }
 
-            textView.setText(app);
+            intent.putExtra("cafedata", app);
+            startActivity(intent);
+
+            //textView.setText(app);
         }
     }
 }
