@@ -37,7 +37,10 @@
         <activity android:name=".ThemeSelectActivity" />
         <activity android:name=".CafeListActivity" />
         <activity android:name=".CafeDescriptionActivity" />
-        <activity android:name=".ReviewActivity"></activity>
+        <activity android:name=".ReviewActivity" />
+        <activity android:name=".SearchActivity">
+
+        </activity>
     </application>
 
 </manifest>

@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 
 public class SearchActivity extends AppCompatActivity {
-    TextView textView;
     Button button;
     String url;
     Intent intent;
@@ -20,7 +19,6 @@ public class SearchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
-        //textView = (TextView) findViewById(R.id.textView);
         button = (Button) findViewById(R.id.reviewButton);
 
         url = "https://openapi.naver.com/v1/search/blog?query=";
