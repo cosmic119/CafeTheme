@@ -1,6 +1,7 @@
 package com.example.hyeongyu.caferecommend;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -22,12 +23,18 @@ import java.util.Arrays;
 public class MainActivity extends AppCompatActivity {
 
     private CallbackManager callbackManager;
+    private boolean isLogin = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         FacebookSdk.sdkInitialize(this.getApplicationContext());
         setContentView(R.layout.activity_main);
+        Log.d("TAG",getPreferences());
+        if(getPreferences().equals("1")){
+            Intent  intent = new Intent(MainActivity.this, MapActivity.class);
+            startActivity(intent);
+        }
 
         callbackManager = CallbackManager.Factory.create();
 
@@ -47,9 +54,12 @@ public class MainActivity extends AppCompatActivity {
                 parameters.putString("fields", "id,name,email,gender,birthday");
                 graphRequest.setParameters(parameters);
                 graphRequest.executeAsync();
+                savePreferences();
 
-                Intent  intent = new Intent(MainActivity.this, CafeDescriptionActivity.class);
-                startActivity(intent);
+                if(getPreferences().equals("1")){
+                    Intent  intent = new Intent(MainActivity.this, MapActivity.class);
+                    startActivity(intent);
+                }
 
             }
 
@@ -69,5 +79,35 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         callbackManager.onActivityResult(requestCode, resultCode, data);
+    }
+
+    // 값 불러오기
+    private String getPreferences(){
+        SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
+        return pref.getString("hi", "");
+    }
+
+    // 값 저장하기
+    private void savePreferences(){
+        SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putString("hi", "1");
+        editor.commit();
+    }
+
+    // 값(Key Data) 삭제하기
+    private void removePreferences(){
+        SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.remove("hi");
+        editor.commit();
+    }
+
+    // 값(ALL Data) 삭제하기
+    private void removeAllPreferences(){
+        SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.clear();
+        editor.commit();
     }
 }

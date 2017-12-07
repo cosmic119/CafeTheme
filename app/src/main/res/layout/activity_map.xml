@@ -1,9 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.hyeongyu.caferecommend.MapActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/image1"
+        android:src="@drawable/yuseong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="79dp"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:src="@drawable/junggu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="284dp"
+        tools:layout_editor_absoluteX="198dp" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:src="@drawable/daeduck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="98dp"
+        tools:layout_editor_absoluteX="166dp" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:src="@drawable/seogu"
+        android:layout_width="169dp"
+        android:layout_height="214dp"
+        tools:layout_editor_absoluteY="299dp"
+        tools:layout_editor_absoluteX="86dp" />
+
+    <ImageView
+        android:id="@+id/image5"
+        android:src="@drawable/donggu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="154dp"
+        tools:layout_editor_absoluteX="262dp" />
+
+
+
+
+
+
+
+</LinearLayout>
