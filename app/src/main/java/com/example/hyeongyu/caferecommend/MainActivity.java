@@ -1,6 +1,8 @@
 package com.example.hyeongyu.caferecommend;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -22,10 +24,21 @@ import java.util.Arrays;
 public class MainActivity extends AppCompatActivity {
 
     private CallbackManager callbackManager;
+    /*  데이터베이스 사용을 위한 변수 */
+    private SQLiteDatabase db;
+    MySQLiteOpenHelper helper;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        db = helper.getWritableDatabase();
+        Cursor c = db.rawQuery("select * from cafe", null);
+        c.moveToFirst();
+        String x = String.valueOf(c.getInt(0));
+        Log.d("테마", x);
+
         FacebookSdk.sdkInitialize(this.getApplicationContext());
         setContentView(R.layout.activity_main);
 
