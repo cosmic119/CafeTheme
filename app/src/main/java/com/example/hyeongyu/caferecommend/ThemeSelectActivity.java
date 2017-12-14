@@ -15,22 +15,23 @@ public class ThemeSelectActivity extends AppCompatActivity {
         setContentView(R.layout.activity_theme_select);
 
         Intent  intent = getIntent();
-        String location = intent.getStringExtra("location");
+        final String location = intent.getStringExtra("location");
 
-        imgBtn01 = (Button) findViewById(R.id.imgBtn01);
-        imgBtn02 = (Button) findViewById(R.id.imgBtn02);
-        imgBtn03 = (Button) findViewById(R.id.imgBtn03);
-        imgBtn04 = (Button) findViewById(R.id.imgBtn04);
-        imgBtn05 = (Button) findViewById(R.id.imgBtn05);
-        imgBtn06 = (Button) findViewById(R.id.imgBtn06);
-        imgBtn07 = (Button) findViewById(R.id.imgBtn07);
-        imgBtn08 = (Button) findViewById(R.id.imgBtn08);
+        imgBtn01 = (Button) findViewById(R.id.imgBtn1);
+        imgBtn02 = (Button) findViewById(R.id.imgBtn2);
+        imgBtn03 = (Button) findViewById(R.id.imgBtn3);
+        imgBtn04 = (Button) findViewById(R.id.imgBtn4);
+        imgBtn05 = (Button) findViewById(R.id.imgBtn5);
+        imgBtn06 = (Button) findViewById(R.id.imgBtn6);
+        imgBtn07 = (Button) findViewById(R.id.imgBtn7);
+        imgBtn08 = (Button) findViewById(R.id.imgBtn8);
 
         View.OnClickListener clickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent  intent = new Intent(ThemeSelectActivity.this, CafeListActivity.class);
                 intent.putExtra("theme", view.getId());
+                intent.putExtra("location", location);
                 startActivity(intent);
             }
         };

@@ -6,82 +6,82 @@
 
 
     <Button
-        android:id="@+id/imgBtn01"
+        android:id="@+id/imgBtn1"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="5dp"
         android:layout_width="170dp"
         android:layout_height="115dp"
         android:background="@drawable/study"/>
 
 
     <Button
-        android:id="@+id/imgBtn02"
+        android:id="@+id/imgBtn2"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="8dp"
         android:layout_width="170dp"
         android:layout_height="115dp"
-        android:layout_toRightOf="@id/imgBtn01"
+        android:layout_toRightOf="@id/imgBtn1"
         android:background="@drawable/rooftop"/>
 
 
     <Button
-        android:id="@+id/imgBtn03"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_below="@id/imgBtn01"
+        android:id="@+id/imgBtn3"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/imgBtn1"
         android:layout_width="170dp"
         android:layout_height="115dp"
         android:background="@drawable/cake" />
 
 
     <Button
-        android:id="@+id/imgBtn04"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_toRightOf="@id/imgBtn03"
-        android:layout_below="@id/imgBtn02"
+        android:id="@+id/imgBtn4"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/imgBtn3"
+        android:layout_below="@id/imgBtn2"
         android:layout_width="170dp"
         android:layout_height="115dp"
         android:background="@drawable/talk"/>
 
 
     <Button
-        android:id="@+id/imgBtn05"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/imgBtn03"
+        android:id="@+id/imgBtn5"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@id/imgBtn3"
         android:layout_width="170dp"
         android:layout_height="115dp"
         android:background="@drawable/brunch"/>
 
 
     <Button
-        android:id="@+id/imgBtn06"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_toRightOf="@id/imgBtn05"
-        android:layout_below="@id/imgBtn04"
+        android:id="@+id/imgBtn6"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/imgBtn5"
+        android:layout_below="@id/imgBtn4"
         android:layout_width="170dp"
         android:layout_height="115dp"
         android:background="@drawable/pet"/>
 
 
     <Button
-        android:id="@+id/imgBtn07"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/imgBtn05"
+        android:id="@+id/imgBtn7"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@id/imgBtn5"
         android:layout_width="170dp"
         android:layout_height="115dp"
         android:background="@drawable/comics"/>
 
 
     <Button
-        android:id="@+id/imgBtn08"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_toRightOf="@id/imgBtn07"
-        android:layout_below="@id/imgBtn06"
+        android:id="@+id/imgBtn8"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/imgBtn7"
+        android:layout_below="@id/imgBtn6"
         android:layout_width="170dp"
         android:layout_height="115dp"
         android:background="@drawable/date"/>

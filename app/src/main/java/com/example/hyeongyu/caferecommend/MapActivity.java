@@ -15,10 +15,10 @@ public class MapActivity extends AppCompatActivity {
         setContentView(R.layout.activity_map);
 
         youseong = (ImageView) findViewById(R.id.image1);
-        junggu = (ImageView) findViewById(R.id.image2);
-        daeduck = (ImageView) findViewById(R.id.image3);
-        seogu = (ImageView) findViewById(R.id.image4);
-        donggu = (ImageView) findViewById(R.id.image5);
+        junggu = (ImageView) findViewById(R.id.image3);
+        daeduck = (ImageView) findViewById(R.id.image5);
+        seogu = (ImageView) findViewById(R.id.image2);
+        donggu = (ImageView) findViewById(R.id.image4);
 
 
         View.OnClickListener v1 = new View.OnClickListener() {
