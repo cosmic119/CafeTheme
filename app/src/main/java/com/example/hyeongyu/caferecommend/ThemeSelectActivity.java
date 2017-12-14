@@ -26,24 +26,94 @@ public class ThemeSelectActivity extends AppCompatActivity {
         imgBtn07 = (Button) findViewById(R.id.imgBtn7);
         imgBtn08 = (Button) findViewById(R.id.imgBtn8);
 
-        View.OnClickListener clickListener = new View.OnClickListener() {
+//        View.OnClickListener clickListener = new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent  intent = new Intent(ThemeSelectActivity.this, CafeListActivity.class);
+//                intent.putExtra("theme", view.getId());
+//                intent.putExtra("location", location);
+//                startActivity(intent);
+//            }
+//        };
+
+        imgBtn01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent  intent = new Intent(ThemeSelectActivity.this, CafeListActivity.class);
-                intent.putExtra("theme", view.getId());
+                intent.putExtra("theme", "1");
                 intent.putExtra("location", location);
                 startActivity(intent);
             }
-        };
+        });
 
-        imgBtn01.setOnClickListener(clickListener);
-        imgBtn02.setOnClickListener(clickListener);
-        imgBtn03.setOnClickListener(clickListener);
-        imgBtn04.setOnClickListener(clickListener);
-        imgBtn05.setOnClickListener(clickListener);
-        imgBtn06.setOnClickListener(clickListener);
-        imgBtn07.setOnClickListener(clickListener);
-        imgBtn08.setOnClickListener(clickListener);
+        imgBtn02.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent  intent = new Intent(ThemeSelectActivity.this, CafeListActivity.class);
+                intent.putExtra("theme", "2");
+                intent.putExtra("location", location);
+                startActivity(intent);
+            }
+        });
+
+        imgBtn03.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent  intent = new Intent(ThemeSelectActivity.this, CafeListActivity.class);
+                intent.putExtra("theme", "3");
+                intent.putExtra("location", location);
+                startActivity(intent);
+            }
+        });
+
+        imgBtn04.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent  intent = new Intent(ThemeSelectActivity.this, CafeListActivity.class);
+                intent.putExtra("theme", "4");
+                intent.putExtra("location", location);
+                startActivity(intent);
+            }
+        });
+        imgBtn05.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent  intent = new Intent(ThemeSelectActivity.this, CafeListActivity.class);
+                intent.putExtra("theme", "5");
+                intent.putExtra("location", location);
+                startActivity(intent);
+            }
+        });
+
+        imgBtn06.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent  intent = new Intent(ThemeSelectActivity.this, CafeListActivity.class);
+                intent.putExtra("theme", "6");
+                intent.putExtra("location", location);
+                startActivity(intent);
+            }
+        });
+
+        imgBtn07.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent  intent = new Intent(ThemeSelectActivity.this, CafeListActivity.class);
+                intent.putExtra("theme", "7");
+                intent.putExtra("location", location);
+                startActivity(intent);
+            }
+        });
+
+        imgBtn08.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent  intent = new Intent(ThemeSelectActivity.this, CafeListActivity.class);
+                intent.putExtra("theme", "8");
+                intent.putExtra("location", location);
+                startActivity(intent);
+            }
+        });
 
     }
 }

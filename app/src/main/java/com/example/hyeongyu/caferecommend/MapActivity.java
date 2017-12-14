@@ -21,20 +21,49 @@ public class MapActivity extends AppCompatActivity {
         donggu = (ImageView) findViewById(R.id.image4);
 
 
-        View.OnClickListener v1 = new View.OnClickListener() {
+        youseong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent  intent = new Intent(MapActivity.this, ThemeSelectActivity.class);
-                intent.putExtra("location", view.getId());
+                intent.putExtra("location", "1");
                 startActivity(intent);
             }
-        };
+        });
 
-        youseong.setOnClickListener(v1);
-        junggu.setOnClickListener(v1);
-        daeduck.setOnClickListener(v1);
-        seogu.setOnClickListener(v1);
-        donggu.setOnClickListener(v1);
+        seogu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent  intent = new Intent(MapActivity.this, ThemeSelectActivity.class);
+                intent.putExtra("location", "2");
+                startActivity(intent);
+            }
+        });
 
+        junggu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent  intent = new Intent(MapActivity.this, ThemeSelectActivity.class);
+                intent.putExtra("location", "3");
+                startActivity(intent);
+            }
+        });
+
+        donggu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent  intent = new Intent(MapActivity.this, ThemeSelectActivity.class);
+                intent.putExtra("location", "4");
+                startActivity(intent);
+            }
+        });
+
+        daeduck.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent  intent = new Intent(MapActivity.this, ThemeSelectActivity.class);
+                intent.putExtra("location", "5");
+                startActivity(intent);
+            }
+        });
     }
 }
