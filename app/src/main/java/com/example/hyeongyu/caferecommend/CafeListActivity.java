@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +31,7 @@ public class CafeListActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         List<Item> items = new ArrayList<>();
-        Item[] item = new Item[ITEM_SIZE];
+        final Item[] item = new Item[ITEM_SIZE];
         int j=0;
 
         //  디비 사용
@@ -38,7 +39,7 @@ public class CafeListActivity extends AppCompatActivity {
 
         db = helper.getWritableDatabase();
         helper.onCreate(db);
-        Cursor c = db.rawQuery("select * from cafe where Theme ="+theme+" and location = "+location+"", null);
+        Cursor c = db.rawQuery("select * from cafe where Theme ="+location+" and location = "+theme+"", null);
         c.moveToFirst();
         //String x = String.valueOf(c.getString(3));
 
@@ -72,5 +73,16 @@ public class CafeListActivity extends AppCompatActivity {
         }
 
         recyclerView.setAdapter(new RecyclerAdapter(getApplicationContext(), items, R.layout.activity_cafe_list));
+
+        recyclerView.addOnItemTouchListener(
+                new RecyclerItemClickListener(this.getApplicationContext(), new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override public void onItemClick(View view, int position) {
+                        Intent  intent = new Intent(CafeListActivity.this, CafeDescriptionActivity.class);
+                        intent.putExtra("cafeinfo", item[position].getTitle());
+                        startActivity(intent);
+                    }
+                })
+        );
+
     }
 }

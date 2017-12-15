@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--<LinearLayout android:layout_height="match_parent"-->
-    <!--android:layout_width="match_parent"-->
-    <!--xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--android:layout_width="match_parent"-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android">-->
 
-    <!--<com.facebook.login.widget.LoginButton-->
-        <!--android:id="@+id/login_button"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_gravity="center_horizontal"-->
-        <!--android:layout_marginBottom="30dp"-->
-        <!--android:layout_marginTop="30dp"-->
-        <!--android:layout_weight="5.17"-->
-        <!--android:text="페이스북으로 로그인" />-->
+<!--<com.facebook.login.widget.LoginButton-->
+<!--android:id="@+id/login_button"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:layout_gravity="center_horizontal"-->
+<!--android:layout_marginBottom="30dp"-->
+<!--android:layout_marginTop="30dp"-->
+<!--android:layout_weight="5.17"-->
+<!--android:text="페이스북으로 로그인" />-->
 
 
 
@@ -20,80 +20,80 @@
 
 
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context="com.example.hyeongyu.caferecommend.MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hyeongyu.caferecommend.MainActivity">
 
-<ImageView
-    android:id="@+id/imageView"
-    android:layout_width="376dp"
-    android:layout_height="101dp"
-    app:srcCompat="@drawable/app_logo"
-    android:layout_marginBottom="8dp"
-    app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-    app:layout_constraintTop_toTopOf="parent"
-    android:layout_marginTop="25dp"
-    app:layout_constraintVertical_bias="0.377"
-    android:layout_marginRight="8dp"
-    app:layout_constraintRight_toRightOf="parent"
-    android:layout_marginLeft="8dp"
-    app:layout_constraintLeft_toLeftOf="parent" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="376dp"
+        android:layout_height="101dp"
+        app:srcCompat="@drawable/app_logo"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"
+        app:layout_constraintVertical_bias="0.377"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
-<LinearLayout
-    android:id="@+id/linearLayout"
-    android:layout_width="250dp"
-    android:layout_height="195dp"
-    android:layout_marginBottom="8dp"
-    android:layout_marginLeft="8dp"
-    android:layout_marginRight="8dp"
-    android:layout_marginTop="70dp"
-    android:orientation="vertical"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.536">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="250dp"
+        android:layout_height="190dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.533">
 
-    <EditText
-        android:id="@+id/idText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="id" />
+        <EditText
+            android:id="@+id/idText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="id" />
 
-    <EditText
-        android:id="@+id/passwordText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:text="비밀번호" />
+        <EditText
+            android:id="@+id/passwordText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="비밀번호" />
 
-    <Button
-        android:id="@+id/loginButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#ffa7bc"
-        android:text="Log in"
-        android:textColor="#ffffff" />
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#d5647c"
+            android:text="Log in"
+            android:textColor="#ffffff" />
 
-    <com.facebook.login.widget.LoginButton
-        android:id="@+id/login_button"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_weight="5.17"
-        android:text="페이스북으로 로그인" />
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="5.17"
+            android:text="페이스북으로 로그인" />
 
-</LinearLayout>
+    </LinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>

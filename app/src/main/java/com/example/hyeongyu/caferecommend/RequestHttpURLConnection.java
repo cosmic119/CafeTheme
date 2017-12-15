@@ -62,8 +62,10 @@ public class RequestHttpURLConnection {
 
             String clientId = "ZKvSsBPNL_mg01Yns33K";//애플리케이션 클라이언트 아이디값";
             String clientSecret = "9AZv6u1dzu";//애플리케이션 클라이언트 시크릿값";
-            String text = URLEncoder.encode("궁동 카페", "UTF-8");
-            String apiURL = _url+ text; // json 결과
+            //String text = URLEncoder.encode("궁동 카페", "UTF-8");
+            //String apiURL = _url+ text; // json 결과
+
+            String apiURL = _url; // json 결과
 
             URL url = new URL(apiURL);
             HttpURLConnection con = (HttpURLConnection)url.openConnection();
